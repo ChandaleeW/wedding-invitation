@@ -237,9 +237,7 @@ function getRsvpToken() {
 function showRsvpMessage(text) {
   rsvpForm.hidden = true;
   rsvpMessage.textContent = text;
-  // No personalized name available — fall back to a generic greeting.
   addresseeName.textContent = "Dear Guest";
-  addresseeName.closest(".addressee").classList.remove("is-loading");
 }
 
 function clampCount(value) {
@@ -291,8 +289,12 @@ async function loadParty() {
 
     rsvpPartyLabel.textContent = data.partyLabel || "";
     if (data.partyLabel) {
-      addresseeName.textContent = data.partyLabel;
-      addresseeName.closest(".addressee").classList.remove("is-loading");
+      const addresseeEl = addresseeName.closest(".addressee");
+      addresseeEl.classList.add("is-loading");
+      setTimeout(() => {
+        addresseeName.textContent = data.partyLabel;
+        addresseeEl.classList.remove("is-loading");
+      }, 400);
     }
     maxCount = Math.max(parseInt(data.maxCount, 10) || 1, 1);
     if (maxCount > 1) {
