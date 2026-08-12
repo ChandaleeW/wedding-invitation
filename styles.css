@@ -284,7 +284,7 @@ input {
     max-width: 8ch;
     margin: 0.28em 0 0;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: clamp(1.7rem, 4.6vw, 4.4rem);
+    font-size: clamp(1.7rem, 3.6vw, 4.4rem);
     font-weight: 400;
     letter-spacing: 0.04em;
     line-height: 0.98;
