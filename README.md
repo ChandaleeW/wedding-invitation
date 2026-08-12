@@ -3,7 +3,7 @@
 Static animated wedding invitation built from the public published Webflow template assets:
 
 - Webflow responsive CMS envelope animation
-- Webflow Sachini & Heshan wedding template content style
+- Webflow Chandalee & Praveen's wedding template content style
 
 Open `index.html` in a browser, or serve the folder locally:
 

@@ -15,7 +15,7 @@ let slides = [];
 let activeSlideIndex = 0;
 let slideTimer;
 let countdownTimer;
-const weddingDate = new Date("2026-09-10T00:00:00+05:30");
+const weddingDate = new Date("2026-09-17T00:00:00+05:30");
 
 function probeImage(src) {
   return new Promise((resolve) => {
@@ -214,7 +214,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 // --- RSVP ----------------------------------------------------------------
 // Paste your deployed Google Apps Script web-app URL here (ends with /exec).
 const RSVP_API =
-  "https://script.google.com/macros/s/AKfycbwVj68aDCfLf29DFpdA1B7s4ez-M1beRIUvvDd6sD9kjcGhNp5FoviO9Mr8mrXg4nEP/exec";
+  "https://script.google.com/macros/s/AKfycbyUoPtDXMddTaGgBviACThXzFv-zjqmUwJb39g56FCs6Bf_XD7qY-mPSBlR9Z9ZSczmtg/exec";
 
 const addresseeName = document.querySelector("#addresseeName");
 const rsvpPartyLabel = document.querySelector("#rsvpPartyLabel");
